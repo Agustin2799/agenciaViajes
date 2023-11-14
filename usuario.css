@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+ 
     background-color: #f8f9fa;
     color: #333;
 }
@@ -10,25 +10,6 @@ body {
 .container {
     max-width: 800px;
 }
-
-
-.navbar {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.navbar-brand {
-    font-size: 1.5em;
-}
-
-.navbar-toggler-icon {
-    color: #fff;
-}
-
-.navbar-nav a {
-    color: #fff;
-}
-
 
 form {
     max-width: 400px;
