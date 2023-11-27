@@ -39,6 +39,14 @@ function validaciones() {
         }
 
     })
+
+    datos.forEach((input, index) => {
+        if (index === 4) {
+            input.value = localStorage.getItem('user');
+        } else {
+            input.value = datosObtenidos[index];
+        }
+    })
 }
 
 function mostrarImagen() {
