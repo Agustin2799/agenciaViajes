@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="my-porfile.js"></script>
     <title>Jap Tour - Usuario</title>
 </head>
 
@@ -34,24 +35,67 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <h2 id="tituloregistro">Registro de Usuario</h2>
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+    <main class="fondoOscuro2">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-2 m-auto">
+                    <h3 class="fondoOscuro2 backOranged celeste">Perfil</h3>
+                </div>
+                <div class="col-10 text-end">
+                    <img class="img-thumbnail fondoOscuro1" id="imagenUsuario" src="./img/usuarioDefecto.webp" alt="">
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
-        </form>
-    </div>
+        </div>
+    
+        <!--Vikiy nadia-->
+        <div class="container mt-0 fondoOscuro2">
+            <form class="needs-validation d-block letra-blanca" id="form" novalidate>
+                <div class="container p-0">
+                    <div class="row">
+                        <div class="col-lg-6 justify-content-start">
+                            <label for="nombre" class="form-label p-1">Nombre *</label>
+                            <input type="text" class="data form-control form-control-sm noBorde p-2" id="nombre"
+                                aria-describedby="emailHelp" required>
+                            <div class="invalid-feedback p-3">Debe ingresar un nombre.</div>
+                        </div>
+                        <div class="col-lg-6 justify-content-start">
+                            <label for="segundoNombre" class="form-label p-1">Segundo nombre</label>
+                            <input type="text" class="data form-control form-control-sm noBorde p-2" id="segundoNombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-6 justify-content-start">
+                            <label for="apellido" class="form-label p-1">Apellido *</label>
+                            <input type="text" class="data form-control form-control-sm noBorde p-2" id="apellido" required>
+                        </div>
+                        <div class="col-lg-6 justify-content-start">
+                            <label for="segundoApellido" class="form-label p-1">Segundo apellido</label>
+                            <input type="text" class="data form-control form-control-sm noBorde p-2" id="segundoApellido"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-6 justify-content-start mb-3">
+                            <label for="email" class="form-label p-1">Email *</label>
+                            <input type="email" class="data form-control form-control-sm noBorde p-2" id="email" required>
+                            <div class="invalid-feedback p-3">Debe ingresar su email.</div>
+                        </div>
+                        <div class="col-lg-6 justify-content-start">
+                            <label for="contacto" class="form-label p-1">Teléfono de contacto</label>
+                            <input type="number" class="data form-control form-control-sm noBorde p-2" id="contacto">
+                            <div class="invalid-feedback p-3">Debe ingresar un teléfono de contacto.</div>
+                        </div>
+                        <div class="col-12 justify-content-start">
+                            <label for="fotoPerfil" class="form-label p-1 ">Foto de perfil</label>
+                            <input class="form-control form-control-sm noBorde p-2" type="file" id="fotoPerfil"
+                                accept="image/*" onchange="mostrarImagen()" />
+    
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btnOrange letra-blanca noBorde btnTurqu my-3">
+                    Guardar cambios
+                </button>
+            </form>
+        </div>
+    </main>
 
 </body>
 
